@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import LanguageSelector from './LanguageSelector';
 import SmoothScrollLink from './ui/SmoothScrollLink';
 import { Menu, X, ShoppingCart } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Header: React.FC = () => {
   const { t } = useLanguage();
@@ -39,7 +40,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <span className="text-xl font-bold font-display text-brand-blue">Natural<span className="text-brand-green">Plus</span></span>
+            <img src={logo}width={200} />
           </a>
         </div>
 
@@ -76,14 +77,14 @@ const Header: React.FC = () => {
             {t('menu.contact')}
           </SmoothScrollLink>
         </nav>
-
+{/* 
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSelector />
           <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white transition-all duration-300 transform hover:scale-105">
             <ShoppingCart className="w-4 h-4 mr-2" />
             {t('menu.store')}
           </Button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
         <button 

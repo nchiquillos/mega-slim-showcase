@@ -4,6 +4,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import LanguageSelector from './LanguageSelector';
 import SmoothScrollLink from './ui/SmoothScrollLink';
 import { Mail, Phone, Instagram, Facebook, Twitter } from 'lucide-react';
+import logo from '../assets/logo.png';
+
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -16,7 +18,9 @@ const Footer: React.FC = () => {
           <div>
             <div className="mb-4">
               <a href="/" className="flex items-center">
-                <span className="text-xl font-bold font-display text-white">Natural<span className="text-brand-green">Plus</span></span>
+              <a href="/" className="flex items-center">
+            <img src={logo}width={200} />
+          </a>
               </a>
             </div>
             <p className="text-gray-400 mb-4">

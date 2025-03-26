@@ -2,6 +2,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { ShieldCheck } from 'lucide-react';
+import NaturalPostCuadrado from '../assets/Natural-PostCuadrado.png';
+
 
 const Ingredients: React.FC = () => {
   const { t } = useLanguage();
@@ -47,16 +49,9 @@ const Ingredients: React.FC = () => {
           >
             <div className="relative">
               <div className="relative z-10">
-                <div className="w-full max-w-lg mx-auto bg-white rounded-2xl shadow-lg p-6 overflow-hidden">
-                  <div className="grid grid-cols-3 gap-4">
-                    {[1, 2, 3, 4, 5, 6].map((item) => (
-                      <div key={item} className="bg-gray-50 p-4 rounded-lg flex flex-col items-center justify-center aspect-square">
-                        <div className="w-12 h-12 mb-2 rounded-full bg-brand-blue/10 flex items-center justify-center">
-                          <Leaf className="w-6 h-6 text-brand-blue" />
-                        </div>
-                        <span className="text-xs font-medium text-center">Ingredient {item}</span>
-                      </div>
-                    ))}
+                <div className="w-full max-w-lg mx-auto  overflow-hidden">
+                  <div className="">
+                    <img src={NaturalPostCuadrado} />
                   </div>
                 </div>
               </div>

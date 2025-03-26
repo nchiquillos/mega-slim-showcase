@@ -92,7 +92,7 @@ const Benefits: React.FC = () => {
           <p className="section-subtitle">{t('benefits.subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <BenefitCard
             icon={<Flame className="w-6 h-6 text-brand-orange" />}
             title={t('benefits.card1.title')}

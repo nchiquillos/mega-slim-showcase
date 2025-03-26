@@ -3,6 +3,10 @@ import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import MegaSlimPlusMockup from '../assets/MegaSlimPlusMockup.png';
+
+
+
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -64,7 +68,7 @@ const Hero: React.FC = () => {
               {/* Main product image */}
               <div className="relative z-10 animate-float">
                 <img 
-                  src="/placeholder.svg" 
+                  src={MegaSlimPlusMockup} 
                   alt="Mega Slim Plus" 
                   className="w-full max-w-lg mx-auto"
                 />
