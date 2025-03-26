@@ -77,14 +77,14 @@ const Header: React.FC = () => {
             {t('menu.contact')}
           </SmoothScrollLink>
         </nav>
-{/* 
+
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSelector />
           <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white transition-all duration-300 transform hover:scale-105">
             <ShoppingCart className="w-4 h-4 mr-2" />
             {t('menu.store')}
           </Button>
-        </div> */}
+        </div>
 
         {/* Mobile Menu Button */}
         <button 

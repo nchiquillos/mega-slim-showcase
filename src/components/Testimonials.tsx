@@ -93,7 +93,7 @@ const Testimonials: React.FC = () => {
           <p className="section-subtitle">{t('testimonials.subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <TestimonialCard 
             name={t('testimonials.client1.name')} 
             text={t('testimonials.client1.text')} 
@@ -108,6 +108,11 @@ const Testimonials: React.FC = () => {
             name={t('testimonials.client3.name')} 
             text={t('testimonials.client3.text')} 
             index={2}
+          />
+          <TestimonialCard 
+            name={t('testimonials.client4.name') || "Maria S."} 
+            text={t('testimonials.client4.text') || "Después de probar Mega Slim Plus por 2 meses, he notado una diferencia increíble. Mi metabolismo es mejor que nunca y tengo más energía durante todo el día."} 
+            index={3}
           />
         </div>
       </div>

@@ -10,6 +10,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -48,6 +49,7 @@ const Index: React.FC = () => {
           <CallToAction />
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </LanguageProvider>
   );
