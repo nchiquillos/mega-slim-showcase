@@ -110,8 +110,8 @@ const Testimonials: React.FC = () => {
             index={2}
           />
           <TestimonialCard 
-            name={t('testimonials.client4.name') || "Maria S."} 
-            text={t('testimonials.client4.text') || "Después de probar Mega Slim Plus por 2 meses, he notado una diferencia increíble. Mi metabolismo es mejor que nunca y tengo más energía durante todo el día."} 
+            name={t("Maria S.")} 
+            text={t('"Después de probar Mega Slim Plus por 2 meses, he notado una diferencia increíble. Mi metabolismo es mejor que nunca y tengo más energía durante todo el día."')} 
             index={3}
           />
         </div>
