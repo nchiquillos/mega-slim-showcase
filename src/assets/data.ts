@@ -3,11 +3,18 @@ export const translations = {
   es: {
     // Header
     "menu.home": "Inicio",
+    "menu.products": "Productos",
     "menu.benefits": "Beneficios",
     "menu.ingredients": "Ingredientes",
     "menu.testimonials": "Opiniones",
     "menu.contact": "Contacto",
     "menu.store": "Tienda Virtual",
+    
+    // Products short descriptions
+    "product.aqua_plus.short_description": "Regulador natural de los niveles de azúcar en la sangre",
+    "product.glucose_life.short_description": "Control de azúcar con raíz de Yacon para más energía",
+    "product.digest_plus.short_description": "Mejora tu digestión con ingredientes naturales",
+    "product.mega_slim.short_description": "Control de peso natural y efectivo",
     
     // Hero section
     "hero.title": "Transforma tu cuerpo con Mega Slim Plus",
@@ -66,15 +73,25 @@ export const translations = {
     "footer.rights": "© 2023 Natural Plus. Todos los derechos reservados.",
     "footer.phone": "Teléfono: +1 (800) 123-4567",
     "footer.email": "Email: info@naturalplus.com",
+    
+    // WhatsApp
+    "contact.whatsapp": "Contáctanos por WhatsApp",
   },
   en: {
     // Header
     "menu.home": "Home",
+    "menu.products": "Products",
     "menu.benefits": "Benefits",
     "menu.ingredients": "Ingredients",
     "menu.testimonials": "Testimonials",
     "menu.contact": "Contact",
     "menu.store": "Online Store",
+    
+    // Products short descriptions
+    "product.aqua_plus.short_description": "Natural regulator of blood sugar levels",
+    "product.glucose_life.short_description": "Sugar control with Yacon root for more energy",
+    "product.digest_plus.short_description": "Improve your digestion with natural ingredients",
+    "product.mega_slim.short_description": "Natural and effective weight control",
     
     // Hero section
     "hero.title": "Transform your body with Mega Slim Plus",
@@ -133,5 +150,8 @@ export const translations = {
     "footer.rights": "© 2023 Natural Plus. All rights reserved.",
     "footer.phone": "Phone: +1 (800) 123-4567",
     "footer.email": "Email: info@naturalplus.com",
+    
+    // WhatsApp
+    "contact.whatsapp": "Contact us via WhatsApp",
   }
 };
