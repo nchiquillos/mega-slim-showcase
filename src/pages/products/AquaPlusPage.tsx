@@ -10,7 +10,7 @@ const AquaPlusPage: React.FC = () => {
     <LanguageProvider translations={translations}>
       <ProductLayout
         name="Aqua Plus"
-        imageUrl={productImages.default}
+        imageUrl={productImages.aquaPlus}
         benefits={[
           'Regula los niveles de azúcar en la sangre',
           'Ayuda a normalizar y regenerar el tejido pancreático',

@@ -10,7 +10,7 @@ const DigestPlusPage: React.FC = () => {
     <LanguageProvider translations={translations}>
       <ProductLayout
         name="Digest Plus"
-        imageUrl={productImages.default}
+        imageUrl={productImages.digestPlus}
         benefits={[
           'Regularidad digestiva natural, sin dependencia',
           'Reducción de la hinchazón y gases',

@@ -10,7 +10,7 @@ const GlucoseLifePlusPage: React.FC = () => {
     <LanguageProvider translations={translations}>
       <ProductLayout
         name="Glucose Life Plus"
-        imageUrl={productImages.default}
+        imageUrl={productImages.glucoseLifePlus}
         benefits={[
           'Combate los síntomas de azúcar alta como visión borrosa y hormigueo en manos y pies',
           'Alivia la fatiga, el cansancio y la neuropatía diabética',

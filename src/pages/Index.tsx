@@ -4,6 +4,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import { translations } from '@/assets/data';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import ProductsShowcase from '@/components/ProductsShowcase';
 import Benefits from '@/components/Benefits';
 import Ingredients from '@/components/Ingredients';
 import Testimonials from '@/components/Testimonials';
@@ -11,7 +12,6 @@ import FAQ from '@/components/FAQ';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-// Remove the import for productsImage as it's not used on this page
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -43,6 +43,7 @@ const Index: React.FC = () => {
         <Header />
         <main>
           <Hero />
+          <ProductsShowcase />
           <Benefits />
           <Ingredients />
           <Testimonials />

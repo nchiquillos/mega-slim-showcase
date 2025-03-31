@@ -10,7 +10,7 @@ const MegaSlimPlusPage: React.FC = () => {
     <LanguageProvider translations={translations}>
       <ProductLayout
         name="Mega Slim Plus"
-        imageUrl={productImages.default}
+        imageUrl={productImages.megaSlimPlus}
         benefits={[
           'Ayuda a controlar el apetito de forma natural',
           'Potencia el metabolismo para una quema de calorías más eficiente',
