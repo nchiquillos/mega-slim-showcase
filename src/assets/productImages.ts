@@ -1,10 +1,12 @@
 
 // Centralized location for product images
 import defaultProductImage from '@/assets/Natural-PostCuadrado.png';
-import aquaPlusImage from '/lovable-uploads/11d0013e-fb29-42a4-944d-6eadf139d03b.png';
-import digestPlusImage from '/lovable-uploads/d2412e7b-02ce-498d-b5b0-1b3a22f97d64.png';
-import glucoseLifePlusImage from '/lovable-uploads/12254cd1-d2c7-45ce-965c-2b5dac6b6a98.png';
-import megaSlimPlusImage from '/lovable-uploads/71761cbf-0460-41e0-a225-42b94bc4bfc8.png';
+
+// For uploaded images in Vite, we need to use relative paths
+const aquaPlusImage = new URL('/lovable-uploads/11d0013e-fb29-42a4-944d-6eadf139d03b.png', import.meta.url).href;
+const digestPlusImage = new URL('/lovable-uploads/d2412e7b-02ce-498d-b5b0-1b3a22f97d64.png', import.meta.url).href;
+const glucoseLifePlusImage = new URL('/lovable-uploads/12254cd1-d2c7-45ce-965c-2b5dac6b6a98.png', import.meta.url).href;
+const megaSlimPlusImage = new URL('/lovable-uploads/71761cbf-0460-41e0-a225-42b94bc4bfc8.png', import.meta.url).href;
 
 export const productImages = {
   default: defaultProductImage,
