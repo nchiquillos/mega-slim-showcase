@@ -1,13 +1,13 @@
 
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
-import productsImage from '/lovable-uploads/ff3078e6-83c9-4a15-8a5c-9e159ff46b40.png';
+import { productImages } from '@/assets/productImages';
 
 const GlucoseLifePlusPage: React.FC = () => {
   return (
     <ProductLayout
       name="Glucose Life Plus"
-      imageUrl={productsImage}
+      imageUrl={productImages.default}
       benefits={[
         'Combate los síntomas de azúcar alta como visión borrosa y hormigueo en manos y pies',
         'Alivia la fatiga, el cansancio y la neuropatía diabética',

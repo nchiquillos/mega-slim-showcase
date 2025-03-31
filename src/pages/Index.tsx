@@ -11,7 +11,7 @@ import FAQ from '@/components/FAQ';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import productsImage from '/lovable-uploads/ff3078e6-83c9-4a15-8a5c-9e159ff46b40.png';
+// Remove the import for productsImage as it's not used on this page
 
 const Index: React.FC = () => {
   useEffect(() => {

@@ -1,13 +1,13 @@
 
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
-import productsImage from '/lovable-uploads/ff3078e6-83c9-4a15-8a5c-9e159ff46b40.png';
+import { productImages } from '@/assets/productImages';
 
 const MegaSlimPlusPage: React.FC = () => {
   return (
     <ProductLayout
       name="Mega Slim Plus"
-      imageUrl={productsImage}
+      imageUrl={productImages.default}
       benefits={[
         'Ayuda a controlar el apetito de forma natural',
         'Potencia el metabolismo para una quema de calorías más eficiente',

@@ -1,13 +1,13 @@
 
 import React from 'react';
 import ProductLayout from '@/components/ProductLayout';
-import productsImage from '/lovable-uploads/ff3078e6-83c9-4a15-8a5c-9e159ff46b40.png';
+import { productImages } from '@/assets/productImages';
 
 const DigestPlusPage: React.FC = () => {
   return (
     <ProductLayout
       name="Digest Plus"
-      imageUrl={productsImage}
+      imageUrl={productImages.default}
       benefits={[
         'Regularidad digestiva natural, sin dependencia',
         'Reducción de la hinchazón y gases',
