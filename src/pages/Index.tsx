@@ -10,6 +10,7 @@ import Ingredients from '@/components/Ingredients';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import CallToAction from '@/components/CallToAction';
+import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
@@ -49,6 +50,7 @@ const Index: React.FC = () => {
           <Testimonials />
           <FAQ />
           <CallToAction />
+          <ContactSection />
         </main>
         <Footer />
         <WhatsAppButton />
