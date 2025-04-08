@@ -71,7 +71,7 @@ export const translations = {
     "footer.privacy": "Política de Privacidad",
     "footer.terms": "Términos de Uso",
     "footer.rights": "© 2023 Natural Plus. Todos los derechos reservados.",
-    "footer.phone": "Teléfono: +1 (800) 123-4567",
+    "footer.phone": "Teléfono: +1 (305) 215‑8816",
     "footer.email": "Email: info@naturalplus.com",
     
     // WhatsApp
@@ -148,7 +148,7 @@ export const translations = {
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Use",
     "footer.rights": "© 2023 Natural Plus. All rights reserved.",
-    "footer.phone": "Phone: +1 (800) 123-4567",
+    "footer.phone": "Phone: +1 (305) 215‑8816",
     "footer.email": "Email: info@naturalplus.com",
     
     // WhatsApp
