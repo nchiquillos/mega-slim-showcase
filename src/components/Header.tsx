@@ -55,12 +55,13 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <SmoothScrollLink 
-            href="#home" 
+          <Link 
+            to="/" 
             className="text-sm font-medium hover:text-primary btn-hover-effect"
+            onClick={closeMobileMenu}
           >
             {t('menu.home')}
-          </SmoothScrollLink>
+          </Link>
 
           <NavigationMenu>
             <NavigationMenuList>
@@ -152,7 +153,7 @@ const Header: React.FC = () => {
 
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSelector />
-          <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white transition-all duration-300 transform hover:scale-105">
+          <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white transition-all duration-300 transform hover:scale-105" onClick={() => window.open('https://wa.me/13052158816', '_blank')}>
             <ShoppingCart className="w-4 h-4 mr-2" />
             {t('menu.store')}
           </Button>
@@ -175,13 +176,13 @@ const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg animate-slide-down">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <SmoothScrollLink 
-              href="#home" 
+            <Link 
+              to="/" 
               className="text-sm font-medium py-2 hover:text-primary"
               onClick={closeMobileMenu}
             >
               {t('menu.home')}
-            </SmoothScrollLink>
+            </Link>
             
             {/* Mobile Products Menu */}
             <div className="py-2">
@@ -251,7 +252,7 @@ const Header: React.FC = () => {
             </SmoothScrollLink>
             <div className="flex items-center justify-between pt-2 border-t border-gray-100">
               <LanguageSelector />
-              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white" onClick={() => window.open('https://wa.me/13052158816', '_blank')}>
                 <ShoppingCart className="w-4 h-4 mr-2" />
                 {t('menu.store')}
               </Button>
