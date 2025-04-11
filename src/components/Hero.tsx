@@ -63,9 +63,9 @@ const Hero: React.FC = () => {
           >
             <div className="relative">
               {/* Main product image */}
-              <div className="relative z-10 animate-float">
+              <div className="relative z-10">
                 <img 
-                  src={productImages.newHero} 
+                  src={productImages.brandHero} 
                   alt="Natural Plus Products" 
                   className="w-full max-w-lg mx-auto"
                 />
