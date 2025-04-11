@@ -10,6 +10,7 @@ const megaSlimPlusImage = 'https://acasas.2com.co/MockupNatural%20(1).png';
 const heroMainImage = 'https://acasas.2com.co/Disen%CC%83o%20sin%20ti%CC%81tulo.png';
 const newHeroImage = '/lovable-uploads/66455a9e-67c8-4e16-a141-4cf686d83b13.png';
 const brandHeroImage = '/lovable-uploads/8c68e6b6-b1de-44af-a288-3f9285d7cbd7.png';
+const mainWebsiteImage = 'https://acasas.2com.co/WhatsApp%20Image%202025-04-11%20at%2011.32.07%20AM.jpeg';
 
 export const productImages = {
   default: defaultProductImage,
@@ -20,6 +21,7 @@ export const productImages = {
   heroMain: heroMainImage,
   newHero: newHeroImage,
   brandHero: brandHeroImage,
+  mainWebsite: mainWebsiteImage
 };
 
 export default productImages;

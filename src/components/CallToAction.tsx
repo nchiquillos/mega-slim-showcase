@@ -7,6 +7,10 @@ import { ArrowRight, ShieldCheck, Truck } from 'lucide-react';
 const CallToAction: React.FC = () => {
   const { t } = useLanguage();
 
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/13052158816', '_blank');
+  };
+
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-brand-blue/5 to-brand-green/5">
       <div className="container mx-auto px-4">
@@ -25,6 +29,7 @@ const CallToAction: React.FC = () => {
             <Button 
               size="lg" 
               className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium text-lg px-10 py-6 rounded-full shadow-lg transition-all duration-300 group w-full sm:w-auto"
+              onClick={handleWhatsAppClick}
             >
               {t('cta.button')}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

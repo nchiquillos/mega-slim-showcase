@@ -26,6 +26,10 @@ const ProductLayout: React.FC<ProductLayoutProps> = ({
 }) => {
   const { t } = useLanguage();
   
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/13052158816', '_blank');
+  };
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -43,6 +47,7 @@ const ProductLayout: React.FC<ProductLayoutProps> = ({
                 <Button 
                   size="lg" 
                   className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 group"
+                  onClick={handleWhatsAppClick}
                 >
                   {t('cta.button')}
                   <ShoppingCart className="ml-2 h-5 w-5" />
@@ -135,6 +140,7 @@ const ProductLayout: React.FC<ProductLayoutProps> = ({
             <Button 
               size="lg" 
               className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 group"
+              onClick={handleWhatsAppClick}
             >
               {t('cta.button')}
               <ShoppingCart className="ml-2 h-5 w-5" />
