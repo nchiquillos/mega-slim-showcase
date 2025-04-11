@@ -12,6 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { toast } from 'sonner';
 import { SendIcon } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres" }),
@@ -28,6 +29,11 @@ const formSchema = z.object({
 });
 
 type FormValues = z.infer<typeof formSchema>;
+
+// EmailJS constants
+const SERVICE_ID = 'default_service'; // You'll need to replace this with your EmailJS service ID
+const TEMPLATE_ID = 'template_contact_form'; // You'll need to replace this with your EmailJS template ID
+const PUBLIC_KEY = 'YOUR_PUBLIC_KEY'; // You'll need to replace this with your EmailJS public key
 
 const ContactForm: React.FC = () => {
   const { t } = useLanguage();
@@ -68,25 +74,27 @@ const ContactForm: React.FC = () => {
   const onSubmit = async (data: FormValues) => {
     try {
       console.log("Enviando formulario", data);
-      // Enviar datos del formulario por correo electrónico
-      const formData = new FormData();
       
-      Object.entries(data).forEach(([key, value]) => {
-        if (key !== 'acceptTerms') {
-          formData.append(key, String(value));
-        }
-      });
-      
-      formData.append("recipient", "sales@gncnaturalplus.com");
-      formData.append("subject", "Nuevo cliente interesado en Natural Plus");
+      // Prepare the template parameters for EmailJS
+      const templateParams = {
+        to_email: 'nachisa99ncs@gmail.com',
+        from_name: data.name,
+        from_email: data.email,
+        phone: data.phone,
+        age: data.age,
+        product: data.product,
+        message: data.message || 'No message provided',
+      };
 
-      // Uso de un servicio gratuito de envío de formularios (FormSubmit)
-      const response = await fetch("https://formsubmit.co/ajax/sales@gncnaturalplus.com", {
-        method: "POST",
-        body: formData,
-      });
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        templateParams,
+        PUBLIC_KEY
+      );
 
-      if (response.ok) {
+      if (response.status === 200) {
         toast.success("Formulario enviado con éxito. ¡Gracias por su interés!");
         form.reset();
       } else {
