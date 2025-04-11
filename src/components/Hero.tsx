@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
               Natural Plus
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-balance">
-              {t('hero.title')}
+              Transforma tu vida con Natural Plus
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
               {t('hero.subtitle')}
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
               {/* Main product image */}
               <div className="relative z-10 animate-float">
                 <img 
-                  src={productImages.heroMain} 
+                  src={productImages.newHero} 
                   alt="Natural Plus Products" 
                   className="w-full max-w-lg mx-auto"
                 />

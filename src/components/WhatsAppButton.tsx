@@ -7,8 +7,8 @@ const WhatsAppButton: React.FC = () => {
   const { t } = useLanguage();
   
   const handleWhatsAppClick = () => {
-    // Replace with your WhatsApp number
-    window.open('https://wa.me/1234567890', '_blank');
+    // Updated WhatsApp number
+    window.open('https://wa.me/13052158816', '_blank');
   };
   
   return (

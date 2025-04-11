@@ -4,6 +4,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import { translations } from '@/assets/data';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import AboutUs from '@/components/AboutUs';
 import ProductsShowcase from '@/components/ProductsShowcase';
 import Benefits from '@/components/Benefits';
 import Ingredients from '@/components/Ingredients';
@@ -44,6 +45,7 @@ const Index: React.FC = () => {
         <Header />
         <main>
           <Hero />
+          <AboutUs />
           <ProductsShowcase />
           <Benefits />
           <Ingredients />
