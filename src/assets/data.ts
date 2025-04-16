@@ -18,7 +18,7 @@ export const translations = {
     
     // Hero section
     "hero.title": "Transforma tu cuerpo con Mega Slim Plus",
-    "hero.subtitle": "El suplemento natural que te ayuda a lograr tus objetivos de peso de manera saludable",
+    "hero.subtitle": "Descubre el poder de la naturaleza en cada uno de nuestros productos auténticos y puros, cuidadosamente seleccionados para tu bienestar.",
     "hero.cta": "Compra Ahora",
     
     // Benefits section
