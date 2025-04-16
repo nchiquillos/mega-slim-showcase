@@ -10,6 +10,8 @@ import AquaPlusPage from "./pages/products/AquaPlusPage";
 import GlucoseLifePlusPage from "./pages/products/GlucoseLifePlusPage";
 import DigestPlusPage from "./pages/products/DigestPlusPage";
 import MegaSlimPlusPage from "./pages/products/MegaSlimPlusPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsOfUsePage from "./pages/TermsOfUsePage";
 import { useEffect } from "react";
 import emailjs from '@emailjs/browser';
 
@@ -36,6 +38,8 @@ const App = () => {
             <Route path="/products/glucose-life-plus" element={<GlucoseLifePlusPage />} />
             <Route path="/products/digest-plus" element={<DigestPlusPage />} />
             <Route path="/products/mega-slim-plus" element={<MegaSlimPlusPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-of-use" element={<TermsOfUsePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

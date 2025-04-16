@@ -5,6 +5,7 @@ import LanguageSelector from './LanguageSelector';
 import SmoothScrollLink from './ui/SmoothScrollLink';
 import { Mail, Phone, Instagram, Facebook, Twitter } from 'lucide-react';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 
 const Footer: React.FC = () => {
@@ -98,14 +99,14 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 mb-6">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.privacy')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/terms-of-use" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.terms')}
-                </a>
+                </Link>
               </li>
             </ul>
             <div>
