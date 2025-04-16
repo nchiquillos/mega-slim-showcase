@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { productImages } from '@/assets/productImages';
 import { useLanguage } from '@/context/LanguageContext';
+import { Button } from '@/components/ui/button';
+import { ShoppingCart } from 'lucide-react';
 
 const ProductsShowcase: React.FC = () => {
   const { t } = useLanguage();
@@ -12,27 +14,35 @@ const ProductsShowcase: React.FC = () => {
       name: 'Aqua Plus',
       image: productImages.aquaPlus,
       description: t('product.aqua_plus.short_description'),
-      path: '/products/aqua-plus'
+      path: '/products/aqua-plus',
+      price: 96
     },
     {
       name: 'Glucose Life Plus',
       image: productImages.glucoseLifePlus,
       description: t('product.glucose_life.short_description'),
-      path: '/products/glucose-life-plus'
+      path: '/products/glucose-life-plus',
+      price: 96
     },
     {
       name: 'Digest Plus',
       image: productImages.digestPlus,
       description: t('product.digest_plus.short_description'),
-      path: '/products/digest-plus'
+      path: '/products/digest-plus',
+      price: 96
     },
     {
       name: 'Mega Slim Plus',
       image: productImages.megaSlimPlus,
       description: t('product.mega_slim.short_description'),
-      path: '/products/mega-slim-plus'
+      path: '/products/mega-slim-plus',
+      price: 96
     }
   ];
+
+  const handleBuyNow = () => {
+    window.open('https://wa.me/13052158816', '_blank');
+  };
 
   return (
     <section id="products" className="py-16 bg-white">
@@ -44,25 +54,38 @@ const ProductsShowcase: React.FC = () => {
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
-            <Link 
-              to={product.path} 
+            <div 
               key={product.name} 
               className="group transition-transform hover:scale-105 duration-300"
             >
               <div className="bg-slate-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                <Link to={product.path}>
+                  <div className="h-64 overflow-hidden">
+                    <img 
+                      src={product.image} 
+                      alt={product.name} 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </Link>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-brand-blue transition-colors">{product.name}</h3>
-                  <p className="text-muted-foreground">{product.description}</p>
+                  <Link to={product.path}>
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-brand-blue transition-colors">{product.name}</h3>
+                  </Link>
+                  <p className="text-muted-foreground mb-4">{product.description}</p>
+                  <div className="flex flex-col items-center gap-2">
+                    <p className="text-2xl font-bold text-brand-blue">${product.price}</p>
+                    <Button 
+                      onClick={handleBuyNow}
+                      className="w-full bg-[#8B5CF6] hover:bg-[#7c4df3] text-white font-medium py-2 px-4 rounded-md transition-all shadow-md hover:shadow-lg"
+                      size="lg"
+                    >
+                      <ShoppingCart className="mr-2 h-5 w-5" /> Comprar Ahora
+                    </Button>
+                  </div>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
