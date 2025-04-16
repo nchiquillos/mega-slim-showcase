@@ -15,28 +15,28 @@ const ProductsShowcase: React.FC = () => {
       image: productImages.aquaPlus,
       description: t('product.aqua_plus.short_description'),
       path: '/products/aqua-plus',
-      price: 96
+      price: 215
     },
     {
       name: 'Glucose Life Plus',
       image: productImages.glucoseLifePlus,
       description: t('product.glucose_life.short_description'),
       path: '/products/glucose-life-plus',
-      price: 96
+      price: 215
     },
     {
       name: 'Digest Plus',
       image: productImages.digestPlus,
       description: t('product.digest_plus.short_description'),
       path: '/products/digest-plus',
-      price: 96
+      price: 215
     },
     {
       name: 'Mega Slim Plus',
       image: productImages.megaSlimPlus,
       description: t('product.mega_slim.short_description'),
       path: '/products/mega-slim-plus',
-      price: 96
+      price: 215
     }
   ];
 
@@ -74,7 +74,8 @@ const ProductsShowcase: React.FC = () => {
                   </Link>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
                   <div className="flex flex-col items-center gap-2">
-                    <p className="text-2xl font-bold text-brand-blue">${product.price}</p>
+                    <p className="text-2xl font-bold text-brand-blue">${product.price} x3</p>
+                    <p className="text-sm text-gray-600 -mt-1 mb-2">Tratamiento mínimo: 3 meses</p>
                     <Button 
                       onClick={handleBuyNow}
                       className="w-full bg-[#8B5CF6] hover:bg-[#7c4df3] text-white font-medium py-2 px-4 rounded-md transition-all shadow-md hover:shadow-lg"
