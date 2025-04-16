@@ -18,11 +18,9 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4">
-              <a href="/" className="flex items-center">
-              <a href="/" className="flex items-center">
-            <img src={logo}width={200} />
-          </a>
-              </a>
+              <Link to="/" className="flex items-center">
+                <img src={logo} width={200} alt="Logo" />
+              </Link>
             </div>
             <p className="text-gray-400 mb-4">
               Natural health supplements for a better life. Our mission is to help you achieve your health goals naturally.

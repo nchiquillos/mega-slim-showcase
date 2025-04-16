@@ -14,6 +14,10 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfUsePage from "./pages/TermsOfUsePage";
 import { useEffect } from "react";
 import emailjs from '@emailjs/browser';
+import { LanguageProvider } from "@/context/LanguageContext";
+
+// Import translations
+import translations from './translations';
 
 const queryClient = new QueryClient();
 
@@ -29,20 +33,22 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/products/aqua-plus" element={<AquaPlusPage />} />
-            <Route path="/products/glucose-life-plus" element={<GlucoseLifePlusPage />} />
-            <Route path="/products/digest-plus" element={<DigestPlusPage />} />
-            <Route path="/products/mega-slim-plus" element={<MegaSlimPlusPage />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-            <Route path="/terms-of-use" element={<TermsOfUsePage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <LanguageProvider translations={translations}>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/products/aqua-plus" element={<AquaPlusPage />} />
+              <Route path="/products/glucose-life-plus" element={<GlucoseLifePlusPage />} />
+              <Route path="/products/digest-plus" element={<DigestPlusPage />} />
+              <Route path="/products/mega-slim-plus" element={<MegaSlimPlusPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+              <Route path="/terms-of-use" element={<TermsOfUsePage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </LanguageProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
