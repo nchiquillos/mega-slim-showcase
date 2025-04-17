@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,7 +22,7 @@ import translations from './translations';
 const queryClient = new QueryClient();
 
 // EmailJS public key (safe to expose in client-side code)
-const PUBLIC_KEY = 'e04aJ_ERtYcFrg_yl';
+const PUBLIC_KEY = 'ZtWegwDYXSCDhQRWJ';
 
 const App = () => {
   // Initialize EmailJS
@@ -54,3 +55,4 @@ const App = () => {
 };
 
 export default App;
+
