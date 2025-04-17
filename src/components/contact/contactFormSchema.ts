@@ -17,6 +17,6 @@ export const formSchema = z.object({
 
 export type FormValues = z.infer<typeof formSchema>;
 
-// EmailJS constants
-export const SERVICE_ID = 'default_service'; // Replace with your EmailJS service ID
-export const TEMPLATE_ID = 'template_contact_form'; // Replace with your EmailJS template ID
+// EmailJS constants - Replace with your actual EmailJS IDs
+export const SERVICE_ID = 'service_gncnaturalplus'; // Your EmailJS service ID
+export const TEMPLATE_ID = 'template_gncnaturalplus'; // Your EmailJS template ID

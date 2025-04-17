@@ -32,6 +32,7 @@ export const useContactForm = () => {
         age: data.age,
         product: data.product,
         message: data.message || 'No message provided',
+        website: 'https://www.gncnaturalplus.com/',
       };
 
       // Send email using EmailJS
