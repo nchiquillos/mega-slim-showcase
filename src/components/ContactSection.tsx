@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => {
           <span className="inline-block px-3 py-1 mb-4 text-xs font-medium rounded-full bg-brand-blue/10 text-brand-blue">
             {t('menu.contact') || 'Contáctanos'}
           </span>
-          <h2 className="section-title">¿Interesado en nuestros productos?</h2>
+          <h2 className="section-title">RECIBE UNA CONSULTA GRATIS CON UN ESPECIALISTA</h2>
           <p className="section-subtitle">
             Complete el siguiente formulario y nuestro equipo se pondrá en contacto con usted lo antes posible
           </p>
