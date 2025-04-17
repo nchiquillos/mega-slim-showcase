@@ -10,12 +10,7 @@ export const useContactForm = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
-      product: "",
       phone: "",
-      age: "",
-      email: "",
-      message: "",
-      acceptTerms: false,
     },
   });
 
@@ -27,11 +22,7 @@ export const useContactForm = () => {
       const templateParams = {
         to_email: 'nelsonf@gncnaturalplus.com',
         from_name: data.name,
-        from_email: data.email,
         phone: data.phone,
-        age: data.age,
-        product: data.product,
-        message: data.message || 'No message provided',
         website: 'https://www.gncnaturalplus.com/',
       };
 
@@ -60,3 +51,4 @@ export const useContactForm = () => {
     isSubmitting: form.formState.isSubmitting
   };
 };
+

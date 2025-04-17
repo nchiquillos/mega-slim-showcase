@@ -22,7 +22,7 @@ import translations from './translations';
 const queryClient = new QueryClient();
 
 // EmailJS public key (safe to expose in client-side code)
-const PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY'; // You need to replace this with your actual EmailJS public key
+const PUBLIC_KEY = 'ZtWegwDYXSCDhQRWJ';
 
 const App = () => {
   // Initialize EmailJS
@@ -55,3 +55,4 @@ const App = () => {
 };
 
 export default App;
+
