@@ -10,5 +10,5 @@ export type FormValues = z.infer<typeof formSchema>;
 
 // EmailJS constants
 export const SERVICE_ID = 'service_i64osbu';
-export const TEMPLATE_ID = 'service_i64osbu';
+export const TEMPLATE_ID = 'template_ruwd92n';
 
