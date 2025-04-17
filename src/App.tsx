@@ -21,8 +21,8 @@ import translations from './translations';
 
 const queryClient = new QueryClient();
 
-// Replace with your actual EmailJS public key
-const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+// EmailJS public key (safe to expose in client-side code)
+const PUBLIC_KEY = 'gZI40IpKYdvtGZDT1';
 
 const App = () => {
   // Initialize EmailJS

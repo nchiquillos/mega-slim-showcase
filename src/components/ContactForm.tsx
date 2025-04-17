@@ -77,7 +77,7 @@ const ContactForm: React.FC = () => {
       
       // Prepare the template parameters for EmailJS
       const templateParams = {
-        to_email: 'nachisa99ncs@gmail.com',
+        to_email: 'nelsonf@gncnaturalplus.com',
         from_name: data.name,
         from_email: data.email,
         phone: data.phone,
