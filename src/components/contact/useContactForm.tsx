@@ -20,11 +20,13 @@ export const useContactForm = () => {
       
       // Prepare the template parameters for EmailJS
       const templateParams = {
-        to_email: 'nelsonf@gncnaturalplus.com',
-        from_name: data.name,
+        name: data.name,
         phone: data.phone,
+        to_email: 'nelsonf@gncnaturalplus.com',
         website: 'https://www.gncnaturalplus.com/',
       };
+
+      console.log("Template params:", templateParams);
 
       // Send email using EmailJS
       const response = await emailjs.send(
@@ -51,4 +53,3 @@ export const useContactForm = () => {
     isSubmitting: form.formState.isSubmitting
   };
 };
-
